@@ -1,5 +1,5 @@
 # HoodApp
-##Background
+## Background
 This project began as an API demo to show I could spin up a basic useless "get the weather" app using OpenWeatherMap.org's API. As I moved along I veered off from the basic "Select a city" functionality and into building functionality to accept wilderness locations based on latitude/longitude settings. Then I realized there could be an actual use for this demo if it focused on Mt. Hood, and serving the information needs of those who climb it. 
 ## Challenges
 I'm still never to the basic web technologies, so my progress is slow. The overriding purpose is still to serve as a demo project. We'll see how it comes out. 
