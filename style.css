@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  margin: 10 px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.5em;
+  background-image: url("./Hood_0122.jpeg");
+  background-size: 100%;
+}
+
+#card {
+  background-color: rgba(0, 0, 0, 0.368);
+  border-radius: 20px;
+  padding: 20px;
+  color: antiquewhite;
+}
+
+#selectCard {
+  background-color: rgba(0, 0, 0, 0.468);
+  border-radius: 20px;
+  padding: 20px;
+  color: rgb(254, 253, 252);
+}
+
+#selector {
+  background-color: gainsboro;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 12pt;
+  border: none;
+}
+
+p.tight {
+    line-height: 0.8;
+  }
+  
+  p.spaced-line {
+    line-height: 1.8;
+
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button {
+  border-radius: 40%;
+  margin: 1em;
+  border: none;
+}
+
+input.search-bar {
+  border: none;
+}
