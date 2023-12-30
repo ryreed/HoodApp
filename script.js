@@ -50,7 +50,7 @@ const getLatLon = (locName) => {
 };
 
 const fetchOWMWeather = (latit, longi) => {
-  const owmApiKey = "697540058e16c0ac58f0a5c25c66f76a";
+  const owmApiKey = "";
   fetch(
     `https://api.openweathermap.org/data/3.0/onecall?lat=${latit}&lon=${longi}&units=imperial&exclude=hourly,daily,minutely&appid=${owmApiKey}`
   )

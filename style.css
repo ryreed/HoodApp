@@ -1,8 +1,8 @@
 body {
   display: flex;
-  margin: 10 px;
-  justify-content: center;
-  align-items: center;
+  margin: 12 px;
+  justify-content: left;
+  align-items: flex-start;
   height: 100vh;
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.5em;
@@ -18,7 +18,7 @@ body {
 }
 
 #selectCard {
-  background-color: rgba(0, 0, 0, 0.468);
+  background-color: rgba(0, 0, 0, 0.368);
   border-radius: 20px;
   padding: 20px;
   color: rgb(254, 253, 252);
