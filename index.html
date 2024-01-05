@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climbing Mt Hood</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./Script2.js"></script>
+  </head>
+  <body onload="getLocName()">
+    <div class="relative fade-in-image" ;>
+      <img id = "firstmain" src = "./images/IMG_7493.jpeg" alt = Mt. Hood from a
+      Portland street" width = "100%">
+      <div id="selectCard">
+        <select id="selector">
+          <option value="defaultSelText">Select your destination</option>
+          <option value="govy">Government Camp</option>
+          <option value="tline">Timberline Lodge</option>
+          <option value="topPalmer">Top of Palmer</option>
+          <option value="triMor">Triangle Moraine</option>
+          <option value="devilsK">Devil's Kitchen</option>
+          <option value="hogsback">Hogsback</option>
+          <option value="hdSummit">Summit</option>
+        </select>
+        <div id="current-display" style="display: none">
+          <p id="elevation" class="tight"></p>
+          <!-- <p id="current-cond" class="tight"></p> -->
+          <p id="current-temp" class="tight"></p>
+          <p id="current-wind" class="tight"></p>
+          <p id="current-gusts" class="tight"></p>
+          <p id="current-clouds" class="tight"></p>
+          <p id="description" class="tight"></p>
+        </div>
+      </div>
+      <div class="absolute-lower-right fade-in-text">
+        
+          <p>From Portland, the mountain is always near: hidden by clouds, silhouetted by dawn, garish on the rare clear day. </br>
+            The mountain is the city’s totem, its calling card, its reward: a glowing temple on the horizon to lift spirits after weeks of rain.</br>
+            Ask a child to draw a mountain and you’ll get something a lot like Mt. Hood. It’s the Platonic ideal of a mountain. 
+        </p>
+      </div>
+    </div>
+    <div id="footer">Footer</div>
+  </body>
+</html>

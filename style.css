@@ -1,4 +1,12 @@
-body {
+p {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h3 {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+#topcontainer {
   display: flex;
   margin: 12 px;
   justify-content: left;
@@ -6,39 +14,88 @@ body {
   height: 100vh;
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.5em;
-  background-image: url("./Hood_0122.jpeg");
-  background-size: 100%;
 }
 
-#card {
-  background-color: rgba(0, 0, 0, 0.368);
-  border-radius: 20px;
-  padding: 20px;
-  color: antiquewhite;
+.gridcontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+  /* grid-auto-rows: minmax(100px, auto); */
+}
+
+.grid-all {
+  grid-column: 1/4;
+  grid-row: auto;
+}
+
+.grid-top-left {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  background: rgba(0, 0, 255, 0.452);
+}
+.grid-lower-right {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  background: rgba(255, 0, 0, 0.464);
+}
+
+.three {
+  grid-column: 1;
+  grid-row: 2 / 5;
+  outline: auto;
+}
+
+div.relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #73ad21;
+}
+
+div.absolute-lower-right {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 60%;
+  height: 50%;
+  border: 1px solid #1c1c1c;
 }
 
 #selectCard {
+  font-family: "Nunito Sans", sans-serif;
   background-color: rgba(0, 0, 0, 0.368);
   border-radius: 20px;
   padding: 20px;
   color: rgb(254, 253, 252);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 4;
 }
 
 #selector {
-  background-color: gainsboro;
+  background-color: rgba(0, 0, 0, 0.02);
   border-radius: 10px;
   padding: 10px;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 12pt;
   border: none;
+  outline-style: none;
+  color: rgb(254, 253, 252);
+}
+
+#selector:hover {
+  background-color: rgba(80, 78, 78, 0.654);
 }
 
 p.tight {
-    line-height: 0.8;
-  }
-  
-  p.spaced-line {
-    line-height: 1.8;
+  line-height: 0.6;
+}
 
+p.spaced-line {
+  line-height: 1.8;
+}
 
 .search {
   display: flex;
@@ -54,4 +111,76 @@ p.tight {
 
 input.search-bar {
   border: none;
+}
+
+.full-width {
+  object-fit: cover;
+  width: 100%;
+}
+
+.fade-in-image {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1.5s;
+  -moz-animation: fadeIn 1.5s;
+  -o-animation: fadeIn 1.5s;
+  -ms-animation: fadeIn 1.5s;
+}
+
+.fade-in-text {
+  animation: fadeIn 3s;
+  color: rgb(254, 253, 252);
+  position: absolute;
+  top: 400px;
+  left: 20px;
+  z-index: 6;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.5s ease-in both;
+  animation: fade-in 1.5s ease-in both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
